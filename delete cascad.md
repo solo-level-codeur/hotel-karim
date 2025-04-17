@@ -28,7 +28,7 @@ L'hôtel et les chambres associées sont supprimés.
 
 ## Test de la mise à jour en cascade
 
-Si vous changez l'id de l'hôtel 2 en 20, les chambres associées seront mises à jour.
+Si je change l'id de l'hôtel 2 en 20, les chambres associées seront mises à jour.
 
 ```SQL
 UPDATE hotels SET id = 20 WHERE id = 2;
@@ -42,7 +42,7 @@ id, id_hotel, id_type, numero, commentaire
 
 ## Test de la suppression avec NULL
 
-Si vous supprimez un hôtel, les chambres associées auront leur `id_hotel` mis à NULL.
+Si je  supprime un hôtel, les chambres associées auront leur `id_hotel` mis à NULL.
 
 id, id_hotel, id_type, numero, commentaire
 '1', NULL, '1', '1', 'NB : En travaux'
