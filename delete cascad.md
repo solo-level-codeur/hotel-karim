@@ -61,7 +61,7 @@ Si `chambres` et `hôtels` utilisent CASCADE et `hôtels` et `tarifs` utilisent 
 
 ### Conclusion
 
-Vous ne pouvez supprimer un hôtel que s'il n'est pas référencé dans `tarifs`. Sinon, la suppression échoue.
+On ne peut pas supprimer un hôtel que s'il n'est pas référencé dans `tarifs`. Sinon, la suppression échoue.
 
 ```SQL
 DELETE FROM hotels WHERE hotels.id = 1;
